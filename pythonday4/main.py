@@ -61,6 +61,7 @@ def borough_picker(answer):
     answer = input("do you want to change this? y/n: \n")
 
   return random_borough
+
 #Actual Code
 
 print("Hello Welcome to Random Trip Generator!")
@@ -68,7 +69,7 @@ answer = input("Do you want to start y/n? ")
 starter_function(answer)
 
 while answer == "y":
-  answer = input("lets start with the cities okay? y/n")
+  answer = input("Lets start with the cities okay? y/n")
   decided_borough = borough_picker(answer)
 
   answer = input("Let's continue with Activities, Shall we? y/n")
@@ -81,11 +82,12 @@ while answer == "y":
   decided_commute = commute_picker(answer)
 
   print("lets have a look at your trip plan: ")
-
+  
   print(decided_borough)
   print(decided_activity)
   print(decided_restaurant)
   print(decided_commute)
+
   satisfied_answer = input("Are you satisfied with the selections? y/n?")
   if satisfied_answer == "y":
     print("Enjoy your trip!")
